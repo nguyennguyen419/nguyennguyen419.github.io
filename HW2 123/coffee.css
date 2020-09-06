@@ -1,0 +1,142 @@
+
+.nav-bar {
+    width: 92.5%;
+    height: 60px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: rgb(241, 227, 201);
+}
+.logo-brand {
+    width: 20%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding-bottom: 05px;
+}
+.logo-brand img {
+    height: 180px;
+    margin-left: 50px;
+    padding-top: 25px;
+}
+.menu {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    color: rgb(78, 58, 20);
+    /*height: 60px;*/
+    width: 80%;
+    height: 100%;
+    padding-top: 22px;
+}
+
+.menu ul li {
+    display: inline;
+}
+.menu ul li a {
+    text-decoration: none;
+    font-size: 19px;
+    padding: 0 20px 20px 0;
+    color: rgb(162 109 10);
+}
+.li {
+    text-align: -webkit-match-parent;
+}
+.ul {
+    list-style-type: disc;
+}
+
+
+.main-container {
+    max-width: 1500px;
+    width: 90%;
+    padding-left: 15px;
+    padding-right: 15px;
+    /*margin-top: 30px;*/
+    margin-left: auto;
+    margin-right: auto;
+}
+.body-content {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+.body {
+    font-family: Roboto, sans-serif;
+    font-size: 16px;
+    overflow-y: scroll;
+    color: rgb(255, 162, 0);
+    background-color:rgb(238, 185, 185);
+    font-weight: 400;
+    line-height: 1.5;
+    text-align: center;
+}
+
+.index-h1 {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+    font-size: 22px;
+    color: rgb(162 109 10);
+}
+.main-post {
+    background-color: #fff;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.15);
+}
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -15px;
+    margin-right: -15px;
+    flex-direction: column;
+}
+
+
+.container {
+    width: 100%;
+    /*height: 450px; */
+    margin: 0%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.divide-3 {
+    width: 30%;
+    height: 400px;
+    padding-bottom: 20px;
+}
+.image:hover {
+    transform: translate(-5px, -5px);
+    box-shadow: 1px 1px 2px 1px grey;
+}
+.image {
+    width: 90%;
+    height: 350px;
+    transition: all 0.25s linear;
+    backface-visibility: hidden;
+}
+div p a {
+    text-decoration: none;
+    color: rgb(162 109 10);
+}
+.dish-text {
+    text-align: center;
+    font-size: 18px;
+    font-weight: 500;
+    /*padding-top: 10px;*/
+}
+
+.text {
+    border: 2px dotted rgb(2, 75, 2);
+    color: rgb(241, 106, 129);
+}
+.script {
+    display: none;
+}
+.footer {
+    text-align: center;
+}
+
