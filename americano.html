@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Americano</title>
+    <link rel="stylesheet" href="style1.css">
+</head>
+<body>
+    <div class="container-fluid" id="header">
+        <header>
+            <div class="nav-bar">
+                <div class="logo-brand">
+                    <a href="index.html">
+                        <img src="./images/logo-1.png" alt="logo">
+                    </a>
+                </div>
+                <div class="menu">
+                    <ul>
+                        <li>
+                            <a href="#">Trang chủ</a>
+                        </li>
+                        <li>
+                            <a href="#">Menu</a>
+                        </li>
+                        <li>
+                            <a href="#">Giới thiệu</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+    <div class="body- part">
+        <div class="body-content main-container">
+            <div class="row main-post">
+                <div>
+                    <div class="slideshow-container">
+                        <div class="mySlides fade" style="display: block">
+                            <img class="detail-image" src="./images/Americano/1.jpg" alt="Americano">                         
+                        </div>
+                        <div class="mySlides fade" style="display: none;">
+                            <img class="detail-image" src="./images/Americano/2.jpg" alt="Americano">                         
+                        </div>
+                        <div class="mySlides fade" style="display: none;">
+                            <img class="detail-image" src="./images/Americano/3.jpg" alt="Americano">                         
+                        </div>
+                    </div>
+                    <br>
+                    <div style="/* text-align: center */">
+                        <span class="dot active" onclick="currentSlide(1)"></span>
+                        <span class="dot" onclick="currentSlide(2)"></span>
+                        <span class="dot" onclick="currentSlide(3)"></span>
+                    </div>
+                </div>
+            <div class="text">
+                <h1 style="font-size: 20px;">Giới thiệu về Americano</h1>
+                <p>
+                    Nếu Ý “xưng bá” ngành công nghiệp café thế giới bằng món Espresso thì Mỹ cũng không kém cạnh với Café Americano. Với hương vị dễ chịu của mình, quả thật không mấy khó khăn cho café Americano để chinh phục những người yêu café trên toàn thế giới.
+                </p>
+                <p>
+                    Trong thời kỳ thế chiến thứ nhất và thứ hai, khi đóng quân tại Ý, để làm giảm độ đậm và vị chua của café Espresso, những người lính Mỹ đã thêm lượng nước vào thức uống này. Và thật bất ngờ, biến tấu ngẫu nhiên của những chàng lính Mỹ đã mang đến một loại café mới cho những người yêu thích café.
+                </p>
+                <p>
+                    Café Americano, hay còn được gọi là Caffe Americano hoặc café Americano là một loại cà phê được tạo ra bằng cách thêm nước nóng vào espresso. Tuy café Americano được lấy cảm hứng từ Espresso nhưng lại được biến tấu cho phù hợp với thới quen uống café không quá đậm của lính Mỹ. Trái với Espresso, café Americano rất ngọt ngào, ít cafein và không có vị chua của hạt Arabica. Ngày nay, café Americano là một loại đồ uống không thể thiếu trong các thực đơn quán cà phê, nhà hàng - khách sạn. 
+                </p>
+                <p>
+                    Để có được một cốc café Americano đúng vị, các Barista/ nhân viên pha chế thường đổ nước sôi vào espresso theo tỉ lệ 1 single shot Espresso (25-30ml) và 5-6 oz nước sôi (150-170ml)
+                </p>
+                <h2>Cách pha chế một cốc Coffe Americano chuẩn Barista chuyên nghiệp</h2>
+                <p></p>
+                <p><em>Bước 1:</em> Để bắt đầu, bạn cần bắt một nồi nước hoặc một ấm nước đun sôi lên bếp. Lượng nước cần phải đủ để làm đầy máy espresoo để có thể tạo ra hơi nước cho café.</p>
+                <p><em>Bước 2:</em> Cho bột espresso vào bộ lọc porter( giống như tách bằng kim loại có tay cầm) và đảm bảo bột được rải đều xuống bộ phận đính kèm trong máy espresso. Ở bước này người ta gọi là “tamping”.</p>
+                <p><em>Bước 3:</em> Đặt bộ lọc porter nằm ngang với máy và vặn về phía bên phải để nó khớp với máy espresso.</p>
+                <p><em>Bước 4:</em> Đặt một ly nhỏ đụng espresso dưới bộ lọc porter. Sau đó ấn công tắc trên máy và cho nước nóng lên.</p>
+                <p><em>Bước 5:</em> Ấn công tắc. Đợi đến khi café đầy 2/3 cốc thì dừng lại và cho phần espresso này vào một cốc café.</p>
+                <p><em>Bước 6:</em> Cho 30 - 235ml (tùy vào độ đậm nhạt của café mà bạn uống uống) nước nóng từ máy espresso hoặc ấm đun nước vào cốc espresso để có được cốc Café Americano hoàn hảo.</p>
+                <p></p>
+            </div>
+        </div>
+        <div class="back-button">
+
+            <button onclick="goBack()">Go Back To Homepage</button>
+        </div>
+    </div>
+    <script>
+        var slideIndex = 1;
+        showSlides(slideIndex);
+    
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+    
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+    
+        function showSlides(n) {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("dot");
+            if (n > slides.length) {
+                slideIndex = 1
+            }
+            if (n < 1) {
+                slideIndex = slides.length
+            }
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+        }
+    
+        function goBack() {
+            window.history.back();
+        }
+    </script>
+</body>
+</html>

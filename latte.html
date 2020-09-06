@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Latte</title>
+    <link rel="stylesheet" href="style1.css">
+</head>
+<body>
+    <div class="container-fluid" id="header">
+        <header>
+            <div class="nav-bar">
+                <div class="logo-brand">
+                    <a href="index.html">
+                        <img src="./images/logo-1.png" alt="logo">
+                    </a>
+                </div>
+                <div class="menu">
+                    <ul>
+                        <li>
+                            <a href="#">Trang chủ</a>
+                        </li>
+                        <li>
+                            <a href="#">Menu</a>
+                        </li>
+                        <li>
+                            <a href="#">Giới thiệu</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+    <div class="body- part">
+        <div class="body-content main-container">
+            <div class="row main-post">
+                <div>
+                    <div class="slideshow-container">
+                        <div class="mySlides fade" style="display: block">
+                            <img class="detail-image" src="./images/Latte/1.jpg" alt="Latte">                         
+                        </div>
+                        <div class="mySlides fade" style="display: none;">
+                            <img class="detail-image" src="./images/Latte/2.jpg" alt="Latte"">                         
+                        </div>
+                        <div class="mySlides fade" style="display: none;">
+                            <img class="detail-image" src="./images/Latte/3.jpg" alt="Latte">                         
+                        </div>
+                    </div>
+                    <br>
+                    <div style="/* text-align: center */">
+                        <span class="dot active" onclick="currentSlide(1)"></span>
+                        <span class="dot" onclick="currentSlide(2)"></span>
+                        <span class="dot" onclick="currentSlide(3)"></span>
+                    </div>
+                </div>
+            <div class="text">
+                <h1 style="font-size: 20px;">Giới thiệu về Latte</h1>
+                <p>
+                    Latte là cà phê sữa bắt nguồn từ nước Ý, thường được uống trong bữa ăn sáng. Một cốc Latte bao gồm 2 phần: espresso và sữa bò tươi hâm nóng. Với hương vị thơm ngon đặc trưng, hiện thức uống này được rất nhiều người trên thế giới đặc biệt yêu thích và là món không thể thiếu trong menu thức uống của các quán đông khách.
+                </p>
+                <p>
+                    Nhiều người không quá sành về café sẽ rất dễ nhầm lẫn Latte với Cappuccino vì cả hai đều có 3 thành phần cơ bản là café Espresso, sữa nóng, bọt sữa và lớp bọt sữa được tạo hình. Tuy nhiên, với Cappuccino thì lượng sữa nóng có thể tương đương so với bọt sữa, còn với Latte, lượng bọt sữa chỉ bằng một nửa sữa nóng. Do đó, so với Cappuccino, Latte ít “bồng bềnh” hơn. Nếu thưởng thức theo đúng gu thì Cappuccino được uống trong những tách dày được hâm nóng trước, Latte lại được uống trong những chiếc ly khá to.
+                </p>
+                <p>
+                    Lượng cafein trong café Latte khá thấp, có độ ngậy của sữa nên thích hợp với nhiều độ tuổi và những ai không quen uống café đậm. Ngoài ra, Latte cũng có thêm nhiều “phiên bản” hấp dẫn khác tùy theo khẩu vị thực khách như Latte trà xanh, Latte caramel, Latte Hazelnut…
+                </p>
+                <h2>5 loại Latte phổ biến nhất</h2>
+                <p></p>
+                <ul class="items">
+                <li>Cafe Latte nóng</li>
+                <li>Cafe Latte đá</li>
+                <li>Latte bí ngô</li>
+                <li>Matcha Latte</li>
+                <li>Latte Machiato</li>
+                </ul>
+                <p></p>
+            </div>
+        </div>
+        <div class="back-button">
+
+            <button onclick="goBack()">Go Back To Homepage</button>
+        </div>
+    </div>
+    <script>
+        var slideIndex = 1;
+        showSlides(slideIndex);
+    
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+    
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+    
+        function showSlides(n) {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("dot");
+            if (n > slides.length) {
+                slideIndex = 1
+            }
+            if (n < 1) {
+                slideIndex = slides.length
+            }
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+        }
+    
+        function goBack() {
+            window.history.back();
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Mocha</title>
+    <link rel="stylesheet" href="style1.css">
+</head>
+<body>
+    <div class="container-fluid" id="header">
+        <header>
+            <div class="nav-bar">
+                <div class="logo-brand">
+                    <a href="index.html">
+                        <img src="./images/logo-1.png" alt="logo">
+                    </a>
+                </div>
+                <div class="menu">
+                    <ul>
+                        <li>
+                            <a href="#">Trang chủ</a>
+                        </li>
+                        <li>
+                            <a href="#">Menu</a>
+                        </li>
+                        <li>
+                            <a href="#">Giới thiệu</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+    <div class="body- part">
+        <div class="body-content main-container">
+            <div class="row main-post">
+                <div>
+                    <div class="slideshow-container">
+                        <div class="mySlides fade" style="display: block">
+                            <img class="detail-image" src="./images/Mocha/1.jpg" alt="Mocha">                         
+                        </div>
+                        <div class="mySlides fade" style="display: none;">
+                            <img class="detail-image" src="./images/Mocha/2.jpg" alt="Mocha">                         
+                        </div>
+                        <div class="mySlides fade" style="display: none;">
+                            <img class="detail-image" src="./images/Mocha/3" alt="Mocha">                         
+                        </div>
+                    </div>
+                    <br>
+                    <div style="/* text-align: center */">
+                        <span class="dot active" onclick="currentSlide(1)"></span>
+                        <span class="dot" onclick="currentSlide(2)"></span>
+                        <span class="dot" onclick="currentSlide(3)"></span>
+                    </div>
+                </div>
+            <div class="text">
+                <h1 style="font-size: 20px;">Giới thiệu về Mocha</h1>
+                <p>
+                    Mocha (đọc là mo-ka), tiếng Ý còn gọi là Mocaccino, là một trong những sản phẩm café Ý điển hình, gần giống như café Latte nhưng có thêm sauce chocolate. Vị đắng ngọt ngào của chocolate hòa quyện với vị đắng của café và béo ngậy hơn nhờ sữa tươi đánh nóng cùng lớp bọt sữa mịn màng, đã khiến cho Mocha trở thành thức uống ưa thích của phụ nữ và giới trẻ.
+                </p>
+                <p>
+                    Vì Mocha sử dụng café espresso, nên để pha được tất nhiên bạn cần có một máy pha café. Nếu không kinh doanh quán thì bạn không cần đầu tư loại máy to đắt tiền, một chiếc máy pha nhỏ xinh xinh là có thể dùng được rồi.
+                </p>
+                <p>
+                    Có 2 loại Mocha là: Mocha nóng và Mocha đá
+                </p>
+                <h2>Máy móc, dụng cụ cần chuẩn bị để làm Mocha</h2>
+                <p></p>
+                <ul class="items">
+                    <li>Máy pha café (có vòi sục sữa)</li>
+                    <li>Máy xay cafe (nếu bạn dùng cafe hạt thì phải có máy xay cafe. Để cafe giữ được hương vị ngon nhất thì khi nào pha mới xay cafe)</li>
+                    <li>Ca đánh sữa (với đồ nóng)</li>
+                    <li>Bình shaker (bình lắc – dùng cho đồ lạnh)</li>
+                    <li>Zic đong (ca đong ml)</li>
+                </ul>
+                <h2 style="font-size: 20px;">Cách làm Mocha nóng</h2>
+                <strong>Công thức</strong>
+                <ul class="items">
+                    <li>Café espresso: 25-30ml</li>
+                    <li>Sữa tươi thanh trùng: 180ml</li>
+                    <li>Sauce Chocolate: 15ml</li>
+                    <li>Bột cacao</li>
+                </ul>
+                <strong>Cách làm</strong>
+                <ul class="items">
+                    <li>Làm nóng cốc sứ bằng cách cho nước sôi vào lòng cốc, để 1 lúc rồi đổ đi, lau khô cốc.</li>
+                    <li>Rót 15ml sauce chocolate vào đáy cốc.</li>
+                    <li>Lấy sữa vào ca đánh sữa</li>
+                    <li>Chiết xuất 1 shot espresso single (chảy thẳng vào trong cốc).</li>
+                    <li>Trong thời gian café chảy, đánh nóng sữa tươi tạo bọt mỏng như bọt latte</li>
+                    <li>Xử lý bọt sữa</li>
+                    <li>Rắc bột cacao phủ đều khắp bề mặt lớp creama của café</li>
+                    <li>Đổ sữa từ từ vào café, tạo art tùy thích.</li>
+                </ul>
+                <p>Thế là bạn đã có một cốc Mocha ngon tuyệt rồi. Khi uống bạn khuấy đều để lớp sauce chocolate hòa quyện với café và sữa, thưởng thức cùng bánh cookie nhé!</p>
+                <p></p>
+            </div>
+        </div>
+        <div class="back-button">
+
+            <button onclick="goBack()">Go Back To Homepage</button>
+        </div>
+    </div>
+    <script>
+        var slideIndex = 1;
+        showSlides(slideIndex);
+    
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+    
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+    
+        function showSlides(n) {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("dot");
+            if (n > slides.length) {
+                slideIndex = 1
+            }
+            if (n < 1) {
+                slideIndex = slides.length
+            }
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+        }
+    
+        function goBack() {
+            window.history.back();
+        }
+    </script>
+</body>
+</html>

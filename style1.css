@@ -1,0 +1,210 @@
+.nav-bar {
+    width: 92.5%;
+    height: 60px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: rgb(241, 227, 201);
+}
+.logo-brand {
+    width: 20%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding-bottom: 05px;
+}
+.logo-brand img {
+    height: 200px;
+    margin-left: 50px;
+    padding-top: 40px;
+}
+.menu {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    color: rgb(78, 58, 20);
+    height: 60px;
+    width: 80%;
+    height: 100%;
+    padding-top: 25px;
+}
+
+.menu ul li {
+    display: inline;
+}
+.menu ul li a {
+    text-decoration: none;
+    font-size: 18px;
+    padding: 0 20px 20px 0;
+    color: rgb(162 109 10);
+}
+.li {
+    text-align: -webkit-match-parent;
+}
+.ul {
+    list-style-type: disc;
+}
+
+.image {
+    text-align: center;
+}
+
+button {
+    background-color: rgb(238, 210, 158);
+    padding: 15px;
+    border-radius: 10px;
+    color: #a06a07;
+}
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+body {
+    font-family: Roboto, sans-serif;
+    font-size: 16px;
+    overflow-y: scroll;
+    color: #464646;
+    background-color: rgb(241, 227, 201);
+    font-weight: 400;
+    line-height: 1.5;
+    text-align: center;
+}
+.main-container {
+    max-width: 1500px;
+    width: 90%;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.main-post {
+    background-color: #fff;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.15);
+}
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -15px;
+    margin-right: -15px;
+    flex-direction: column;
+}
+.slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+    padding-top: 60px;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+}
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+.mySlides {
+    /*display: none;*/
+}
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+.active, .dot:hover {
+    background-color: #717171;
+}
+.detail-image {
+    width: 600px;
+    height: 500px;
+}
+0% {
+    opacity: .4;
+}
+100% {
+    opacity: 1;
+}
+.text {
+    font-size: 15px;
+    padding-left: 50px;
+    padding-right: 50px;
+    /* width: 1200px; */
+    text-align: left;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    /*color: rgb(162 109 10);*/
+}
+.h1 {
+    display: block;
+    font-size: 2em;
+    margin-block-start: 0.67em;
+    margin-block-end: 0.67em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+.p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+.items {
+    padding-left: 40px;
+    /*padding-bottom: 40px;*/
+}
+.ul {
+    display: block;
+    list-style-type: disc;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+}
+.back-button {
+    border-top: 1px solid #00000020;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+button {
+    background-color: whitesmoke;
+    padding: 15px;
+    border-radius: 10px;
+}
+.button {
+    appearance: button;
+    -webkit-writing-mode: horizontal-tb !important;
+    text-rendering: auto;
+    color: -internal-light-dark(buttontext, rgb(170, 170, 170));
+    letter-spacing: normal;
+    word-spacing: normal;
+    text-transform: none;
+    text-indent: 0px;
+    text-shadow: none;
+    display: inline-block;
+    text-align: center;
+    align-items: flex-start;
+    cursor: default;
+    background-color: -internal-light-dark(rgb(239, 239, 239), rgb(74, 74, 74));
+    box-sizing: border-box;
+    margin: 0em;
+    font: 400 13.3333px Arial;
+    padding: 1px 6px;
+    border-width: 2px;
+    border-style: outset;
+    border-color: -internal-light-dark(rgb(118, 118, 118), rgb(195, 195, 195));
+    border-image: initial;
+}
+
